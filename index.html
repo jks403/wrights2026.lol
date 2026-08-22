@@ -5,50 +5,110 @@
 <html>
 <head>
 <title>Welcome to nginx!</title>
-<style>
-html { color-scheme: light dark }
-body { width: 35em; margin: 0 auto; background-color:beige; }
-font-family: Tahoma, Verdana, Arial, sans-serif; }
+<style>  
+
+* {
+	box-sizing: border-box;
+}
+
+.column {
+	float: left;
+	width: 50%;
+	padding: 5px;
+}
+
+.row:: after {
+	content: "";
+	clear: both;
+	display: table;
+}
+
+/*html { color-scheme:  dark }
+ body { width: 35em; margin: 0 auto; background-color:beige; } */
+font-family: Tahoma, Verdana, Arial, sans-serif; } 
 </style>
 </head>
 <body>
-<h1> Welcome to the Wright's Family Reunion 2026! </h1>
-<h1> This was last year at Dunsmir, Ca in Norcal!</h1>
-
+<h1 style="color:Tomato;"> Welcome to the Wright's Family Reunion 2026! </h1>
+<h1 style="color:Tomato;"> This was last year at Dunsmir, Ca in Norcal!</h1>
+<h1 style="color:Tomato;">
 <img src="Wrights2025.jpg">
 <br>
 
 <img src="AllTheCousins.jpg"> <br>
-<h1> Family Reunion 2017 Crescent City, CA with Pappa and all the Cousins </h1>
-<h1> The second and third born of the cousins. Tiffany and Joshua after Michael. Love this girl! </h1>
+<h1 style="color:Tomato;"> Family Reunion 2017 Crescent City, CA with Pappa and all the Cousins </h1>
+<h1 style="color:Tomato;"> The second and third born of the cousins. Tiffany and Joshua after Michael. Love this girl! </h1>
 <br>
 <img src="Me and Tiffany.jpg">
 <br>
 <form action="/add" method="POST">
 	<fieldset>
-		<h3> Add new item </h3>
-		<label>Family Member</label>
+		<h3 style="color:tomato;"> Add new item </h3>
+		<label style="color:DodgerBlue;">Family Member</label>
 		<input type="text" id='family member' name="family member" required>
 		<br><br>
-		<label> Food group </label>
-		<input type="text" id="food group" name="food group" required>
+		<label style="color:DodgerBlue;"> Food group </label>
+		<input style="color:DodgerBlue;" type="text" id="food group" name="food group" required>
 		<button type="submit"> Submit </button>
 	</fieldset>
 </form>
-<p> Aunt Jenny and Uncle Mike bringing the Barbecue pit and pancake mix, milk, eggs, sausage, bacon, toast </p>
-<p> Debbie and Dean bringing cookies and coffee, milk, coffee creamer, steak for 30 people, salad, tomatoes, cucumber </p>
+<p style="color:Tomato;"> Aunt Jenny and Uncle Mike bringing the Barbecue pit and pancake mix, milk, eggs, sausage, bacon, toast </p>
+<p style="color:DodgerBlue;"> Debbie and Dean bringing cookies and coffee, milk, coffee creamer, steak for 30 people, salad, tomatoes, cucumber </p>
 <img src="AllTheCousins.jpg"> <br>
 
-<p> Lydia and Joshua bringing fire pit... maybe.</p>
-<p>If you see this page, the nginx web server is successfully installed and
+<p style="color:tomato;"> Lydia and Joshua bringing fire pit... maybe.</p>
+<p style="color:Fuchsia;">If you see this page, the nginx web server is successfully installed and
+
 working. Further configuration is required.</p>
-<img src="Nani_And_Me.jpg">
-<p> This is Lillian Wright and me</p>. <br/>
-<p>For online documentation and support please refer to
-<a href="http://nginx.org/">nginx.org</a>.<br/>
-Commercial support is available at
-<a href="http://nginx.com/">nginx.com</a>.</p>
-<img src="JoshuaKaneStewart.jpg">
+
+
+
+<div class="row">
+	<div class="column">
+		<img src="Nani_And_Me.jpg" alt="Nani and Joshua" style="width:50%">
+	</div>
+
+	<div class="column">
+		<img src="JoshuaKaneStewart.jpg" alt="Joshua" style="width:50%">
+	</div>
+</div>
+
+
+
+<div class="row">
+        <div class="column">
+                <img src="IMG_5237.jpeg" alt="MELV and Pappa and Norma" style="width:50%">
+        </div>
+
+        <div class="column">
+                <img src="IMG_5242.jpeg" alt="Nani and brothers " style="width:50%">
+        </div>
+
+	<div class="column">
+		<img src="IMG_5227.jpeg" alt="whole family reunion" style="width:30%">
+	</div>
+
+	 <div class="column">
+                <img src="IMG_5237.jpeg" alt="whole family reunion" style="width:30%">
+        </div>
+	
+	<div class="column">
+		<img src="Img_5241.jpeg" alt="Nani and brothers" style="width:33%">
+	</div>
+</div>
+
+
+
+
+   <p style="color:Fuchsia;"> This is Lillian Wright and me </p>. <br/>
+   <p>For online documentation and support please refer to
+   <a href="http://nginx.org/">nginx.org</a>.<br/>
+   Commercial support is available at
+   <a href="http://nginx.com/">nginx.com</a>.</p>
+   <img src="JoshuaKaneStewart.jpg" alt="Joshua" >
+</div>
+
+
 
 <p><em>Thank you for using nginx.</em></p>
 </body>
